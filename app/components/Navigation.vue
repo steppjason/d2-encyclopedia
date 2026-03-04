@@ -7,14 +7,14 @@
       <li class="my-1 py-2">
         <button
           class="flex w-full cursor-pointer items-center justify-start gap-2"
-          @click="basesExpaned = !basesExpaned"
+          @click="basesExpanded = !basesExpanded"
         >
           <span class="inline-block min-w-3">{{
-            basesExpaned ? '-' : '+'
+            basesExpanded ? '-' : '+'
           }}</span>
           <span>Bases</span>
         </button>
-        <ul v-show="basesExpaned" class="indent-8">
+        <ul v-show="basesExpanded" class="indent-8">
           <li>
             <a href="#armor" class="my-1 block py-2">Armor</a>
           </li>
@@ -29,14 +29,14 @@
       <li class="my-1 py-2">
         <button
           class="flex w-full cursor-pointer items-center justify-start gap-2"
-          @click="mapsExpaned = !mapsExpaned"
+          @click="mapsExpanded = !mapsExpanded"
         >
           <span class="inline-block min-w-3">{{
-            mapsExpaned ? '-' : '+'
+            mapsExpanded ? '-' : '+'
           }}</span>
           <span>Maps</span>
         </button>
-        <ul v-show="mapsExpaned" class="indent-8">
+        <ul v-show="mapsExpanded" class="indent-8">
           <li>
             <a href="#act-i" class="my-1 block py-2">Act I</a>
           </li>
@@ -59,6 +59,6 @@
 </template>
 
 <script setup lang="ts">
-const basesExpaned = ref(false)
-const mapsExpaned = ref(false)
+const basesExpanded = ref(false)
+const mapsExpanded = ref(false)
 </script>
