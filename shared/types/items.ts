@@ -1,5 +1,5 @@
 export interface Armor {
-  id: number
+  id: string
   name: string
   defenseLow: number
   defenseHigh: number

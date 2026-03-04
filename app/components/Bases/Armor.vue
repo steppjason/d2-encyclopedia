@@ -1,15 +1,16 @@
 <template>
   <div>
-    <h1>Armor Bases</h1>
-    <h2 class="mb-2">Player Bases</h2>
-    <p class="mb-4">
+    <h2 id="armor" class="header mb-2">Armor Bases</h2>
+    <h3 class="mb-2">Player Bases</h3>
+    <p class="mb-2">
       <span class="font-bold">Superior</span> with
       <span class="font-bold">15% Enhanced Defense</span> always preferred
     </p>
-    <div class="flex flex-wrap justify-start gap-4">
+    <div class="mb-4 flex flex-wrap justify-start gap-4">
       <div
         v-for="base in playerBases"
         :key="base.id"
+        :id="`${base.id}`"
         class="border-color-gray rounded-md border p-4"
       >
         <img
@@ -48,16 +49,53 @@
         </div>
       </div>
     </div>
-    <h2 class="mb-2">Mercenary Bases</h2>
-    <p class="mb-4">
-      <span class="text-color-blue font-bold">Ethereal </span>
-      <span class="font-bold">Superior</span> with
-      <span class="font-bold">15% Enhanced Defense</span> always preferred
-    </p>
+    <h3 class="mb-2">Mercenary Bases</h3>
+
+    <div class="mb-4 flex justify-start gap-4">
+      <div class="max-w-xl">
+        <p class="mb-2">
+          <span class="text-color-blue font-bold">Ethereal </span>
+          <span class="font-bold">Superior</span> with
+          <span class="font-bold">15% Enhanced Defense</span> always preferred
+        </p>
+        <p class="mb-2">
+          Mercenaries gain <span class="text-sm italic">1.5</span> strength per
+          level. At max level ( <span class="text-sm italic">98</span> ) they
+          have <span class="text-sm italic">213</span> strength. In order to
+          wear Sacred Armor or Shadow Plate they will need to get strength from
+          their helm or weapon. A common helm to use on mercenaries is
+          Andariel's Visage, which gives
+          <span class="text-sm italic">+25-30</span> strength. Take this into
+          account when gearing up your mercenary. Use the table on the right as
+          a rough guide for what kind of armor you should aim for.
+        </p>
+      </div>
+
+      <div class="border-color-blue/30 grid grid-cols-2 rounded-md border">
+        <div class="bg-color-gray/80 rounded-tl-md py-1 pl-4 text-sm font-bold">
+          Level
+        </div>
+        <div class="bg-color-gray/80 rounded-tr-md py-1 pr-4 text-sm font-bold">
+          Strength
+        </div>
+        <div class="py-1 pl-4 text-sm">60</div>
+        <div class="py-1 pr-4 text-sm">146</div>
+        <div class="bg-color-gray/30 py-1 pl-4 text-sm">70</div>
+        <div class="bg-color-gray/30 py-1 pr-4 text-sm">164</div>
+        <div class="py-1 pl-4 text-sm">80</div>
+        <div class="py-1 pr-4 text-sm">181</div>
+        <div class="bg-color-gray/30 py-1 pl-4 text-sm">85</div>
+        <div class="bg-color-gray/30 py-1 pr-4 text-sm">190</div>
+        <div class="py-1 pl-4 text-sm">90</div>
+        <div class="py-1 pr-4 text-sm">199</div>
+      </div>
+    </div>
+
     <div class="flex flex-wrap justify-start gap-4">
       <div
         v-for="base in mercBases"
         :key="base.id"
+        :id="`${base.id}`"
         class="border-color-gray rounded-md border p-4"
       >
         <img

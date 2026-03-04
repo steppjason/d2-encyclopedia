@@ -1,6 +1,6 @@
 export const ARMOR_BASES: Armor[] = [
   {
-    id: 1,
+    id: 'archon-plate',
     name: 'Archon Plate',
     defenseLow: 410,
     defenseHigh: 524,
@@ -17,7 +17,7 @@ export const ARMOR_BASES: Armor[] = [
     eth: true
   },
   {
-    id: 2,
+    id: 'mage-plate',
     name: 'Mage Plate',
     defenseLow: 225,
     defenseHigh: 261,
@@ -34,7 +34,7 @@ export const ARMOR_BASES: Armor[] = [
     eth: false
   },
   {
-    id: 3,
+    id: 'dusk-shroud',
     name: 'Dusk Shroud',
     defenseLow: 361,
     defenseHigh: 467,
@@ -51,7 +51,7 @@ export const ARMOR_BASES: Armor[] = [
     eth: false
   },
   {
-    id: 4,
+    id: 'sacred-armor',
     name: 'Sacred Armor',
     defenseLow: 487,
     defenseHigh: 600,
@@ -68,7 +68,7 @@ export const ARMOR_BASES: Armor[] = [
     eth: true
   },
   {
-    id: 5,
+    id: 'wyrmhide',
     name: 'Wyrmhide',
     defenseLow: 364,
     defenseHigh: 470,
@@ -85,7 +85,7 @@ export const ARMOR_BASES: Armor[] = [
     eth: false
   },
   {
-    id: 6,
+    id: 'scarab-husk',
     name: 'Scarab Husk',
     defenseLow: 369,
     defenseHigh: 474,
@@ -102,7 +102,7 @@ export const ARMOR_BASES: Armor[] = [
     eth: false
   },
   {
-    id: 7,
+    id: 'wire-fleece',
     name: 'Wire Fleece',
     defenseLow: 375,
     defenseHigh: 481,
@@ -119,7 +119,7 @@ export const ARMOR_BASES: Armor[] = [
     eth: false
   },
   {
-    id: 8,
+    id: 'great-hauberk',
     name: 'Great Hauberk',
     defenseLow: 395,
     defenseHigh: 501,
@@ -136,7 +136,7 @@ export const ARMOR_BASES: Armor[] = [
     eth: false
   },
   {
-    id: 9,
+    id: 'kraken-shell',
     name: 'Kraken Shell',
     defenseLow: 417,
     defenseHigh: 523,
@@ -153,7 +153,7 @@ export const ARMOR_BASES: Armor[] = [
     eth: true
   },
   {
-    id: 10,
+    id: 'hellforge-plate',
     name: 'Hellforge Plate',
     defenseLow: 421,
     defenseHigh: 530,
@@ -170,7 +170,7 @@ export const ARMOR_BASES: Armor[] = [
     eth: true
   },
   {
-    id: 11,
+    id: 'lacquered-plate',
     name: 'Lacquered Plate',
     defenseLow: 433,
     defenseHigh: 541,
@@ -187,7 +187,7 @@ export const ARMOR_BASES: Armor[] = [
     eth: true
   },
   {
-    id: 12,
+    id: 'shadow-plate',
     name: 'Shadow Plate',
     defenseLow: 446,
     defenseHigh: 557,

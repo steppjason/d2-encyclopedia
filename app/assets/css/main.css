@@ -25,6 +25,10 @@
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     font-family: var(--font-primary);
     background-color: var(--color-color-background);
@@ -51,10 +55,20 @@
     font-size: var(--text-xl);
   }
 
-  h3,
+  h3 {
+    font-size: var(--text-lg);
+  }
+
   h4,
   h5,
   h6 {
-    font-size: var(--text-lg);
+    font-size: var(--text-base);
+  }
+
+  .header:after {
+    border-bottom: 3px solid var(--color-color-blue);
+    display: block;
+    content: '';
+    width: 100px;
   }
 }
