@@ -3,7 +3,10 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   css: ['./app/assets/css/main.css'],
-  devtools: { enabled: true },
+  devtools: { enabled: false },
+  imports: {
+    dirs: ['../shared/constants']
+  },
   modules: [
     [
       '@pinia/nuxt',
@@ -16,6 +19,13 @@ export default defineNuxtConfig({
   nitro: {
     compressPublicAssets: {
       brotli: true
+    }
+  },
+  typescript: {
+    tsConfig: {
+      compilerOptions: {
+        strict: true
+      }
     }
   },
   vite: {
