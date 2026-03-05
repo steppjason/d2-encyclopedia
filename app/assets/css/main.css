@@ -17,8 +17,13 @@
   --color-color-font: #ebf6ff;
   --color-color-header: #f4faff;
 
-  --color-color-gray: #323444;
-  --color-color-blue: #868dc9;
+  --color-color-gray: #6a6a6a;
+  --color-color-blue: #7575ff;
+  --color-color-gold: #c2ac6d;
+  --color-color-yellow: #ffff64;
+  --color-color-green: #00ff00;
+  --color-color-orange: #ffa800;
+  --color-color-brown: #c5b176;
 
   --font-primary: 'Nunito Sans';
   --font-header: 'Montserrat';
@@ -65,10 +70,24 @@
     font-size: var(--text-base);
   }
 
+  .section:after {
+    border-bottom: 2px solid var(--color-color-gray);
+    margin-bottom: calc(var(--spacing) * 8);
+    padding-bottom: calc(var(--spacing) * 8);
+    display: block;
+    content: '';
+    opacity: 40%;
+  }
+
+  .header {
+    margin-bottom: calc(var(--spacing) * 2);
+  }
+
   .header:after {
     border-bottom: 3px solid var(--color-color-blue);
     display: block;
     content: '';
     width: 100px;
+    opacity: 75%;
   }
 }
