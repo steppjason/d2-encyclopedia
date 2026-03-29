@@ -2,7 +2,7 @@
   <div
     :id="`${armor.id}`"
     :key="armor.id"
-    class="border-color-gray/50 rounded-md border p-4"
+    class="border-color-gray/50 rounded-xs border p-4"
   >
     <img
       :src="`/bases/armor/${armor.image}`"
